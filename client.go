@@ -69,6 +69,11 @@ func (c *Client) Close() error {
 	return nil
 }
 
+// QueuesClient - create a new QueuesClient
+func (c *Client) QueuesClient() *QueuesClient {
+    return &QueuesClient{client: c}
+}
+
 // NewEvent - create an empty event
 func (c *Client) NewEvent() *Event {
 	return c.E()
