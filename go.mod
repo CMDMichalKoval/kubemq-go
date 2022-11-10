@@ -1,4 +1,4 @@
-module github.com/kubemq-io/kubemq-go
+module github.com/CMDMichalKoval/kubemq-go
 
 go 1.15
 
